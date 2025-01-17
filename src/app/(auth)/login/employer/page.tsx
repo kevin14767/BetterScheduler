@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
 
-export default function EmployeeLoginPage() {
+export default function EmployerLoginPage() {
     const router = useRouter()
     
     return (
@@ -13,7 +13,7 @@ export default function EmployeeLoginPage() {
             <div className="w-[400px] p-8 border rounded-3xl shadow-sm">
                 <div className="space-y-6 text-center">
                     <h1 className="text-xl font-medium mb-12">
-                        EMPLOYEE LOGIN
+                        Employer LOGIN
                     </h1>
                     
                     <div className="flex flex-col space-y-4">
@@ -30,6 +30,7 @@ export default function EmployeeLoginPage() {
                         <Button
                             className="w-full py-6 text-black bg-[#f2e6d9] hover:bg-[#e6d0b8] rounded-full"
                             variant="ghost"
+                            onClick={() => router.push('/dashboard/')}
                         >
                             LOGIN
                         </Button>
@@ -37,7 +38,7 @@ export default function EmployeeLoginPage() {
                         <div className="text-sm">
                             <span>Don't have an account? </span>
                             <button 
-                                onClick={() => router.push('/signup/employee')}
+                                onClick={() => router.push('/signup/employer')}
                                 className="text-blue-600 hover:underline"
                             >
                                 Sign up
