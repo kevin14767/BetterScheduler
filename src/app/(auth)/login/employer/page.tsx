@@ -30,7 +30,7 @@ export default function EmployerLoginPage() {
                         <Button
                             className="w-full py-6 text-black bg-[#f2e6d9] hover:bg-[#e6d0b8] rounded-full"
                             variant="ghost"
-                            onClick={() => router.push('/dashboard/')}
+                            onClick={() => router.push('/employer')}
                         >
                             LOGIN
                         </Button>
